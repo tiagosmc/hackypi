@@ -4,6 +4,7 @@
 PROJECT_PATH="$PWD"
 
 # install dependencies
+sudo locale-gen en_US.UTF-8
 sudo apt install -y -qq file zstd lz4 bc build-essential chrpath cpio diffstat gawk git texinfo wget python3-distutils-extra python3-passlib chrpath diffstat repo || exit 1
 
 # checkout meta-layers
