@@ -7,6 +7,9 @@ inherit core-image extrausers
 # enable sd card image build
 IMAGE_FSTYPES = "tar.xz ext3 rpi-sdimg"
 
+# Increase boot partition size for Pi 5 to accommodate all firmware and kernel files
+BOOT_SPACE = "102400"
+
 # from core-minimal-image
 IMAGE_ROOTFS_SIZE ?= "8192"
 
